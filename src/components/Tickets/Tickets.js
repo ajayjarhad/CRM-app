@@ -11,7 +11,7 @@ const Tickets = () => {
     let data = {
       data: {
         name: ticketNameRef.current.value,
-        workspace: process.env.REACT_APP_ASANA_KEY,
+        workspace: process.env.REACT_APP_ASANA_WORKSPACE,
       },
     };
     if (!addedTicketStatus)
