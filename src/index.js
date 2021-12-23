@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-import ListCustomer from "./components/ListCustomer";
+import ContentTable from "./components/ContentTable";
 import Header from "./components/Header";
 import "./index.css";
 
@@ -14,7 +14,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <Header />
-      <ListCustomer />
+      <ContentTable />
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
